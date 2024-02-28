@@ -1,4 +1,4 @@
-import dataclasses as dc
+from . import story as s
 
 
 moments: dict[str, dict] = {
@@ -9,17 +9,9 @@ moments: dict[str, dict] = {
 	"fade": {
 		"animation": "fade",
 	},
-    "guard0": {
-        "actor": "AdayoGuard",
-        "help": True,
-        "text": "Tisik will see you now.",
-    },
+    "guard0": dict(
+        actor="AdayoGuard",
+        help=True,
+        text="Tisik will see you now.",
+    ),
 }
-
-
-@dc.dataclass
-class Moment:
-    actor: str
-    animation: str
-    help: bool
-    text: str
