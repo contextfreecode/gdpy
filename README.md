@@ -1,6 +1,12 @@
 # GDScript-Python Comparison
 
-Run GDScript with:
+To update the script class cache:
+
+```sh
+godot --headless --quit project.godot
+```
+
+Run GDScript:
 
 ```sh
 # Or just -s instead of --script
