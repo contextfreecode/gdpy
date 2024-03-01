@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://3wjd2f2sp1x4"]
-
-[ext_resource type="Texture2D" uid="uid://b2vsmtw28yush" path="res://snake.png" id="1_k6gc7"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(93, 97)
-texture = ExtResource("1_k6gc7")
