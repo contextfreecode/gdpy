@@ -5,10 +5,11 @@ extends MainLoop
 func _init():
     print("Hi there!")
     # preload("res://gddemo/other.gd")
-    # var other := load("res://gddemo/other.gd")
-    # print(other)
-    # other.something()
-    Other.something()
+    var other := load("res://gddemo/other.gd")
+    print(other)
+    # other.free()
+    other.something()
+    # Other.something()
     # quit()
 
 
