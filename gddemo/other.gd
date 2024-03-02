@@ -6,7 +6,7 @@ static func something():
 	try_arrays()
 	var gabber := Gabber.new()
 	gabber.gab()
-	gabber.anything = gabber
+	#gabber.anything = gabber
 	#gabber.anything = weakref(gabber)
 	#gabber.anything = 5
 	#gabber.free()
@@ -22,7 +22,7 @@ static func _static_init():
 static func try_arrays():
 	const numbers: Array[int] = [3, 4]
 	# var numbers := [3, 4] as Array[int]
-	numbers.append(5)
+	#numbers.append(5)
 	#numbers[0] = "hi"
 	#var blah: Array = numbers
 	#blah[0] = "hi"

@@ -14,6 +14,8 @@ func _init():
 	other.something()
 	#Other.something()
 	explore_types()
+	#pause()
+	#print("paused")
 	#quit()
 
 
@@ -21,3 +23,7 @@ func explore_types():
 	var name: String
 	print(name.length())
 	print(not name)
+
+
+#func pause():
+	#await create_timer(1.0).timeout
