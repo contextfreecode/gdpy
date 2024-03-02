@@ -2,10 +2,10 @@ class_name Other
 
 
 static func something():
-	print("more")
-	try_arrays()
-	var gabber := Gabber.new()
-	gabber.gab()
+	print("Other say something")
+	# try_arrays()
+	# var gabber := Gabber.new()
+	# gabber.gab()
 	#gabber.anything = gabber
 	#gabber.anything = weakref(gabber)
 	#gabber.anything = 5
@@ -16,7 +16,7 @@ static func something():
 
 
 static func _static_init():
-	print("Static init")
+	print("static init")
 
 
 static func try_arrays():
@@ -33,4 +33,4 @@ class Gabber: # extends Object:
 	var anything: Variant
 
 	func gab():
-		print("Gabbing now")
+		print("gabbing now")
