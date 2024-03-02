@@ -6,9 +6,9 @@ static func something():
 	try_arrays()
 	var gabber := Gabber.new()
 	gabber.gab()
-	gabber.something = gabber
-	#gabber.something = weakref(gabber)
-	#gabber.something = 5
+	gabber.anything = gabber
+	#gabber.anything = weakref(gabber)
+	#gabber.anything = 5
 	#gabber.free()
 	#gabber.free()
 	#gabber.gab()
@@ -20,14 +20,17 @@ static func _static_init():
 
 
 static func try_arrays():
-	var something := [3, 4] as Array[int]
-	#something[0] = "hi"
-	#var blah: Array = something
+	const numbers: Array[int] = [3, 4]
+	# var numbers := [3, 4] as Array[int]
+	numbers.append(5)
+	#numbers[0] = "hi"
+	#var blah: Array = numbers
 	#blah[0] = "hi"
+	print("numbers: %s" % [numbers])
 
 
 class Gabber: # extends Object:
-	var something: Variant
+	var anything: Variant
 
 	func gab():
 		print("Gabbing now")
